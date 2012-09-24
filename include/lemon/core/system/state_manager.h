@@ -16,7 +16,7 @@ public:
 	void pop();
 
 private:
-	std::stack<std::unique_ptr<state>> states;
+	std::stack<std::unique_ptr<state>> m_states;
 };
 
 }

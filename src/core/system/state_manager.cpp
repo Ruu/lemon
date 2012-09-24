@@ -6,16 +6,16 @@ namespace system {
 
 void state_manager::push(std::unique_ptr<state> s)
 {
-	states.push(std::move(s));
-	states.top()->exec();
+	m_states.push(std::move(s));
+	m_states.top()->exec();
 }
 
 void state_manager::pop()
 {
-	states.pop();
+	m_states.pop();
 
-	if (!states.empty())
-		states.top()->exec();
+	if (!m_states.empty())
+		m_states.top()->exec();
 }
 
 }

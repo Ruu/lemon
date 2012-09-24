@@ -16,7 +16,7 @@ public:
 	void run() const;
 
 private:
-	std::vector<std::unique_ptr<process>> processes;
+	std::vector<std::unique_ptr<process>> m_processes;
 };
 
 }

@@ -4,9 +4,9 @@ namespace lemon {
 namespace core {
 namespace system {
 
-process_manager *state::get_process_manager()
+process_runner *state::get_process_runner()
 {
-	return &m_process_manager;
+	return &m_process_runner;
 }
 
 }

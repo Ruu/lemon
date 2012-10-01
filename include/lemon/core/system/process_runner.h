@@ -1,5 +1,5 @@
-#ifndef LEMON_CORE_SYSTEM_PROCESSMANAGER_H
-#define LEMON_CORE_SYSTEM_PROCESSMANAGER_H
+#ifndef LEMON_CORE_SYSTEM_PROCESSRUNNER_H
+#define LEMON_CORE_SYSTEM_PROCESSRUNNER_H
 
 #include <memory>
 #include <vector>
@@ -9,7 +9,7 @@ namespace lemon {
 namespace core {
 namespace system {
 
-class process_manager
+class process_runner
 {
 public:
 	void add(std::unique_ptr<process> p);
@@ -23,4 +23,4 @@ private:
 }
 }
 
-#endif // PROCESSMANAGER_H
+#endif // PROCESSRUNNER_H

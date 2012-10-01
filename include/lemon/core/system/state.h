@@ -1,7 +1,7 @@
 #ifndef LEMON_CORE_SYSTEM_STATE_H
 #define LEMON_CORE_SYSTEM_STATE_H
 
-#include "lemon/core/system/process_manager.h"
+#include "lemon/core/system/process_runner.h"
 
 namespace lemon {
 namespace core {
@@ -13,10 +13,10 @@ public:
 	virtual void exec() = 0;
 
 protected:
-	process_manager *get_process_manager();
+	process_runner *get_process_runner();
 
 private:
-	process_manager m_process_manager;
+	process_runner m_process_runner;
 };
 
 }

@@ -1,15 +1,15 @@
-#include "lemon/core/system/process_manager.h"
+#include "lemon/core/system/process_runner.h"
 
 namespace lemon {
 namespace core {
 namespace system {
 
-void process_manager::add(std::unique_ptr<process> p)
+void process_runner::add(std::unique_ptr<process> p)
 {
 	m_processes.push_back(std::move(p));
 }
 
-void process_manager::run() const
+void process_runner::run() const
 {
 	for (auto &p : m_processes) 
 		p->run();
@@ -18,3 +18,4 @@ void process_manager::run() const
 }
 }
 }
+

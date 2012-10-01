@@ -4,8 +4,6 @@
 #include "lemon/core/system/process_runner.h"
 
 namespace lemon {
-namespace core {
-namespace system {
 
 class state
 {
@@ -19,8 +17,6 @@ private:
 	process_runner m_process_runner;
 };
 
-}
-}
 }
 
 #endif // STATE_H

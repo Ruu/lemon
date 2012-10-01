@@ -6,8 +6,6 @@
 #include "lemon/core/system/process.h"
 
 namespace lemon {
-namespace core {
-namespace system {
 
 class process_runner
 {
@@ -19,8 +17,6 @@ private:
 	std::vector<std::unique_ptr<process>> m_processes;
 };
 
-}
-}
 }
 
 #endif // PROCESSRUNNER_H

@@ -1,8 +1,6 @@
 #include "lemon/core/system/process_runner.h"
 
 namespace lemon {
-namespace core {
-namespace system {
 
 void process_runner::add(std::unique_ptr<process> p)
 {
@@ -15,7 +13,5 @@ void process_runner::run() const
 		p->run();
 }
 
-}
-}
 }
 

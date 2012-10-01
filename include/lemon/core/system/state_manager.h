@@ -6,8 +6,6 @@
 #include "lemon/core/system/state.h"
 
 namespace lemon {
-namespace core {
-namespace system {
 
 class state_manager
 {
@@ -19,8 +17,6 @@ private:
 	std::stack<std::unique_ptr<state>> m_states;
 };
 
-}
-}
 }
 
 #endif //STATEMANAGER_H
